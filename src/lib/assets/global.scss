@@ -1,0 +1,17 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+
+  --foreground: black;
+  --background: white;
+  @media (prefers-color-scheme: dark) {
+    --foreground: white;
+    --background: black;
+  }
+
+  * {
+    color: var(--foreground);
+    background-color: var(--background);
+  }
+}
