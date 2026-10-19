@@ -51,7 +51,7 @@
   <title>{page.params.path} - プレビュー</title>
 </svelte:head>
 
-<PreviewLayout fileName={page.params.path}>
+<PreviewLayout fileName={page.params.path || ''}>
   {#if loading}
     <p>読み込み中...</p>
   {:else if errorMsg}
