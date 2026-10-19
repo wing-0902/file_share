@@ -1,14 +1,11 @@
 <script lang="ts">
   import type { Snippet } from 'svelte';
 
-  // fileName: string
-  // info: Key-Valueの配列
-  // children: 従来の<slot />
-  // table: 従来の名前付き<slot />
-type InfoItem = {
+  type InfoItem = {
     key: string;
     value: string | number;
   };
+
   let {
     fileName = '',
     info,
